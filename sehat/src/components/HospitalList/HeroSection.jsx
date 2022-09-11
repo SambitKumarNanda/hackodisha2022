@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./css/style.css";
 import ListHospital from "./ListHospital";
+import { getHospitalList } from "../../api/hospitalHandler";
 
 const FindHospital = () => {
   // eslint-disable-next-line
@@ -9,6 +10,12 @@ const FindHospital = () => {
   const [pin, setPin] = useState("");
   const [name, setName] = useState("");
 
+  const [hospitalList, setHospitalList] = useState([]);
+  if (hospitalList.length === 0)
+    getHospitalList().then((data) => {
+      setHospitalList(data);
+      // console.log(data);
+    });
   const pincodeHandler = (event) => {
     setPin(event.target.value);
   };
@@ -69,8 +76,10 @@ const FindHospital = () => {
           </div>
         </div>
       </div>
-      {(pin.length === 6 || name !== "") && (
-        <ListHospital pin={pin} name={name} />
+      {pin.length === 6 || name !== "" ? (
+        <ListHospital hospitalList={hospitalList} pin={pin} />
+      ) : (
+        <ListHospital hospitalList={hospitalList} />
       )}
     </div>
   );
