@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "../HomePage/css/homepagestyle.css";
 import image1 from "../HomePage/images/apllo-hospital.webp";
 import image2 from "../HomePage/images/amri-hospital.jpg";
@@ -33,7 +34,9 @@ function HomePage() {
             </p>
           </div>
           <div className="btn-container">
-            <button className="find-hospital-btn">Find Hospital</button>
+            <button className="find-hospital-btn">
+              <NavLink to="/find-hospital">Find Hospital</NavLink>
+            </button>
             <button className="covid19-info-btn">COVID-19 Information</button>
           </div>
         </div>

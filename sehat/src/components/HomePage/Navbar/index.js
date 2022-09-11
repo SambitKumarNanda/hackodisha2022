@@ -38,8 +38,6 @@ const Navbar = () => {
         </NavMenu>
         <NavBtn>
           <NavBtnLink to="/signin">Sign in</NavBtnLink>
-          <Bar>|</Bar>
-          <NavBtnLink to="/login">Log in</NavBtnLink>
         </NavBtn>
       </Nav>
     </>
