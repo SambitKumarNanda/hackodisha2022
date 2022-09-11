@@ -31,11 +31,15 @@
 }
 
 .contact-text {
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: #719ba7;
 }
 
 .ac_btn:hover {
   background-color: #a6c1c8;
   color: #fff;
+}
+
+.about-us-text {
+  font-size: 1rem;
 }
