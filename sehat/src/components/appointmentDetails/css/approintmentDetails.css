@@ -1,0 +1,47 @@
+.hospital-details-container{
+    font-size: large;
+    color: rgb(105, 105, 105);
+    border: 2px solid rgb(17, 17, 17);
+    padding: 5%;
+    padding-top: 2%;
+}
+
+.hospital-details-heading{
+    margin-left: 35%;;
+    margin-bottom: 3%;
+    color: rgb(59, 59, 133);
+}
+
+.hospital-details-container input{
+    width: 370px;
+    height: 30px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.hospital-details-container textarea{
+    height: 70px;
+    width: 370px;
+}
+
+.hospital-details-btn{
+    width: 30%;
+    margin-left: 30%;
+}
+
+@media (max-width:957px) {
+    .hospital-details-container input, .hospital-details-container textarea{
+        width: 15rem;
+    }
+    .hospital-details-container{
+        width: 275px;
+        padding: 2%;
+    }
+    .hospital-details-btn{
+        width: 100%;
+        margin-left: 0;
+    }
+    .hospital-details-heading{
+        margin-left: 20%;
+    }
+}
