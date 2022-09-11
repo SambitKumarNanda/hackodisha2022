@@ -21,6 +21,9 @@ const ListHospital = (props) => {
               <p className="card-text text-black-50">
                 {hospital.hospital_address}
               </p>
+              <p className="card-text text-black-50">
+                {`Bed Count : ${hospital.bed_count}`}
+              </p>
             </div>
             <div className="card-footer">
               {/* <a href="/" className="col-md-5 col-xs-6 btn"><i className="fa fa-medkit" aria-hidden="true"></i> Make Appointment </a>
