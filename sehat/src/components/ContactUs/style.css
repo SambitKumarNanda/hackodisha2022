@@ -1,0 +1,41 @@
+.contact-us-container {
+  height: 87vh;
+  padding-top: 6rem;
+  background-color: #edf3f4;
+}
+
+.contact-us-primary-heading {
+  color: #719ba7;
+}
+
+.contact-us-tertiary-heading {
+  color: #719ba7;
+}
+
+.contact__form .form-control {
+  padding: 1.375rem 0.75rem;
+  line-height: 1.5;
+  border-radius: 0;
+  border: 0.1rem solid #a6c1c8;
+}
+
+.contact_form input.form-control {
+  margin-bottom: 2rem;
+  height: calc(2.5rem + 0.75rem + 0.2rem);
+}
+
+.contact-email,
+.contact-phone {
+  font-size: 0.95rem;
+  color: #719ba7;
+}
+
+.contact-text {
+  font-size: 0.75rem;
+  color: #719ba7;
+}
+
+.ac_btn:hover {
+  background-color: #a6c1c8;
+  color: #fff;
+}
