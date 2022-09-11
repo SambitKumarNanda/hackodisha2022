@@ -19,6 +19,7 @@ router.get("/", async (req, res) => {
 });
 
 router.post("/add", async (req, res) => {
+  //   console.log(req.body);
   try {
     const {
       hospital_name,
@@ -55,10 +56,11 @@ router.post("/add", async (req, res) => {
       hospital_state,
       hospital_city,
     };
+    console.log(HospitalObj);
     const hospital = new Hospital(HospitalObj);
     await hospital.save();
     res.status(200).json({
-      message: "Product Added Successfully",
+      message: "Hospital Added Successfully",
     });
   } catch (err) {
     console.log(err.message);

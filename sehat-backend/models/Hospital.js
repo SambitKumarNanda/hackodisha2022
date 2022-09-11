@@ -3,11 +3,11 @@ const Schema = mongoose.Schema;
 
 const hospitalSchema = new Schema(
   {
-    name: {
+    hospital_name: {
       type: String,
       required: true,
     },
-    imageURL: {
+    hospital_image: {
       type: String,
       required: true,
     },
@@ -15,27 +15,27 @@ const hospitalSchema = new Schema(
       type: Number,
       required: true,
     },
-    description: {
+    hospital_description: {
       type: String,
       required: true,
     },
-    contact: {
+    hospital_contact: {
       type: String,
       required: true,
     },
-    address: {
+    hospital_address: {
       type: String,
       required: true,
     },
-    pincode: {
+    hospital_pincode: {
       type: Number,
       required: true,
     },
-    state: {
+    hospital_state: {
       type: String,
       required: true,
     },
-    city: {
+    hospital_city: {
       type: String,
       required: true,
     },

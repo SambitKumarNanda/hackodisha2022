@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./css/details.css";
 import AppointMentModal from "../HospitalDetails/AppointmentModal";
 
-const Details = () => {
+const Details = (props) => {
   const [modalIsOpen, setmodalIsOpen] = useState(false);
 
   return (
