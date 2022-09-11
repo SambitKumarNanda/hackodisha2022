@@ -349,3 +349,23 @@ a:visited {
 }
 
 /* Responsive Queries */
+@media (max-width: 1510px) {
+  .hero-text {
+    padding-right: 28rem;
+    margin-top: -5rem;
+  }
+  .textbox {
+    padding-right: 54rem;
+  }
+}
+
+@media (max-width: 1168px) {
+  .textbox {
+    padding-right: 37rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .textbox {
+  }
+}

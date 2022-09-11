@@ -1,12 +1,13 @@
 import React from "react";
 import "./style.css";
+import icon from "../HomePage/images/icon.png";
 
 function SignIn() {
   return (
     <div className="text-center sign-in-container sign-in-container-2">
       <main class="form-signin w-100 m-auto">
-        <form>
-          <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+        <form className="signin-form">
+          <img className="sign-up-logo" src={icon} alt="sehat-icon" />
 
           <div class="form-floating">
             <input

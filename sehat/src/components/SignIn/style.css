@@ -6,6 +6,22 @@
   background-color: #f7f7f7;
 }
 
+.signin-form {
+  background-color: #dbe6e9;
+  border-radius: 5px;
+  padding: 2rem;
+  font-size: 1rem;
+}
+
+.sign-up-logo {
+  vertical-align: middle;
+  background-color: #afc7ce;
+  padding: 0.8rem;
+  border-radius: 100rem;
+  margin-top: -6rem;
+  margin-bottom: 2rem;
+}
+
 .sign-in-container-2 {
   height: 95vh;
 }
@@ -13,6 +29,11 @@
 .form-signin {
   max-width: 330px;
   padding: 15px;
+}
+
+.form-floating {
+  margin-bottom: 2rem;
+  border-radius: 2rem;
 }
 
 .form-signin .form-floating:focus-within {
